@@ -6,8 +6,9 @@ import { GiphyFetch } from '@giphy/js-fetch-api'
 function App() {
   const [gifs, setGifs] = useState('dog')
   const [width, setWidth] = useState(window.innerWidth)
-  const gf = new GiphyFetch('nokEIpoUxC3kQQW3gCN7rtLm219qmBeh')
-  console.log(gifs)
+  const gf = new GiphyFetch( import.meta.env.VITE_API_KEY)
+
+ 
   
   const fetchGifs = (offset) => gf.search(gifs, { sort: 'relevant', lang: 'es',offset,limit: 10, type: 'gifs' })// gifs / stickers / text / videos
   return (
