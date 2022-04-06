@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Helmet } from 'react-helmet'
 import ResizeObserver from "react-resize-observer"
 import SearchBox from './components/SearchBox'
 import { Grid } from '@giphy/react-components'
